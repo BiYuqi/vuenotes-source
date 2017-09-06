@@ -1,21 +1,18 @@
 <template>
   <div id="app">
     <Headers></Headers>
-    <div class="range">
-        <transition name="fade-nav">
-            <NavBar v-if="canShow"></NavBar>
-        </transition>
-        <transition name="no-mode-translate-fade">
-            <router-view class="main_content"></router-view>
-        </transition>
-    </div>
+    <NavBar></NavBar>
+    <transition name="no-mode-translate-fade">
+        <router-view class="main_content"></router-view>
+    </transition>
+
   </div>
 </template>
 
 <script>
 import NavBar from './components/nav.vue'
 import Headers from './components/header.vue'
-import { mapActions } from 'vuex';
+
 export default {
     name: 'app',
     components: {
@@ -26,46 +23,6 @@ export default {
         return {
 
         }
-    },
-    methods:{
-        ...mapActions(['enableshow','disableshow']),
-        rightShow () {
-            if(this.$store.state.isShow.isShow === false){
-                return this.enableshow();
-            }
-        },
-        leftShow () {
-            if(this.$store.state.isShow.isShow === true){
-                return this.disableshow();
-            }
-        }
-    },
-    computed:{
-        canShow () {
-            if(document.body.clientWidth <= 800){
-                return this.$store.state.isShow.isShow;
-            }else {
-                return true
-            }
-        }
-    },
-    mounted () {
-        this.$nextTick(function(){
-            var that = this;
-            etouch('#app',function(e,touch) {
-                // e.clock = true;  //给div加锁,完全阻止默认事件
-            }).on('swiper',function(e,touch) {
-
-            }).on('up',function(e,touch) {
-                // console.log('上滑回调');
-            }).on('down',function(e,touch) {
-                // console.log('下滑回调');
-            }).on('left',function(e,touch) {
-                that.leftShow();
-            }).on('right',function(e,touch) {
-                that.rightShow();
-            });
-        })
     }
 }
 </script>
@@ -162,16 +119,6 @@ export default {
         from{-webkit-transform:rotate(0);transform:rotate(0)}
         to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
     }
-    .btn{
-        display: none;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        width: 30px;
-        height: 30px;
-        background: url('http://oiukswkar.bkt.clouddn.com/logo.mobile.png') no-repeat;
-        background-size: cover;
-    }
     #app {
       font-family: 'Microsoft Yahei';
       -webkit-font-smoothing: antialiased;
@@ -185,7 +132,7 @@ export default {
         box-sizing: border-box;
         background-color: #F8F8F8;
         position: absolute;
-        top: 0;
+        top: 60px;
         left: 200px;
         padding: 0 15px;
     }
@@ -260,21 +207,43 @@ export default {
             width: 100%;
             height: 50px;
             line-height: 50px;
-            position: relative;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 666;
             text-align: center;
             border-bottom: 1px solid #ececec;
             background-color: #FDFDFD;
-                background: #54d9e0;
+            background: #54d9e0;
         }
-        .btn{
-            display: inline-block;
+        .btn_logo{
+            padding-left: 24px;
+        }
+        .btn_logo:after{
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            width: 30px;
+            height: 30px;
+            background: url('http://oiukswkar.bkt.clouddn.com/logo.mobile.png') no-repeat;
+            background-size: cover;
+            content: '';
+            display: block;
+        }
+        .main-wraper{
+            margin-top: 8px;
+            /*display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            flex-direction: row;*/
         }
         .main_content{
             height: 100%;
             box-sizing: border-box;
             background-color: #fafafa;
             position: absolute;
-            top: 0;
+            top: 90px;
             left: 0;
             padding: 0;
         }
@@ -290,22 +259,29 @@ export default {
             padding-left: 20px;
             text-align: left;
         }
+        .main-mod{
+            margin-bottom: 0;
+        }
         .main-mod-con{
             list-style: none;
             float: left;
-            width: auto;
-            text-align: center;
+            width: 45%;
+            text-align: left;
             border-radius: 5px;
             transition: .4s all;
-            border: 1px solid #1BA261;
+            border: 1px solid #e0e0e0;
             background-color: #fff;
+            margin: 4px 2.5%;
         }
         .main-mod-con a{
             display: block;
-            padding: 5px 5px;
             color: #333;
             margin: 0 1px;
+            width: 100%;
             text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
 </style>

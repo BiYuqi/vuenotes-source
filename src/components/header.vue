@@ -1,18 +1,17 @@
 <template>
-    <div>
-        <div class="header">
-            <a href="https://github.com/BiYuqi" target="_blank" title="我的Github" class="logo"><img src="../../static/img/logo.png" alt=""></a>
-            <i>前端实用工具</i>
-            <iframe
-                style="position:absolute;top:23px;right:6px;"
-                frameborder="0" scrolling="0" width="91px" height="20px" class="star-gihub"
-                src="https://ghbtns.com/github-btn.html?user=BiYuqi&repo=vuenotes&type=star&count=true" >
-            </iframe>
-            <span class="btn" @click="toShow"></span>
-            <a href="http://loadingmore.com/" target="_blank" class="github-img" title="我的博客">
-                <img src="http://loadingmore.com/demo/src/img/timg.png" alt="">
-            </a>
-        </div>
+    <div class="header">
+        <a href="https://github.com/BiYuqi" target="_blank" title="我的Github" class="logo"><img src="../../static/img/logo.png" alt=""></a>
+        <i class="btn_logo">前端导航</i>
+        <iframe
+            style="position:absolute;top:23px;right:6px;"
+            frameborder="0" scrolling="0" width="91px" height="20px" class="star-gihub"
+            src="https://ghbtns.com/github-btn.html?user=BiYuqi&repo=vuenotes&type=star&count=true" >
+        </iframe>
+        <!-- <span class="btn"></span> -->
+        <!-- <span class="btn" @click="toShow"></span> -->
+        <a href="http://loadingmore.com/" target="_blank" class="github-img" title="我的博客">
+            <img src="http://loadingmore.com/demo/src/img/timg.png" alt="">
+        </a>
     </div>
 </template>
 
@@ -25,10 +24,7 @@
             }
         },
         methods: {
-            ...mapActions(['enableshow','disableshow']),
-            toShow () {
-                this.$store.state.isShow.isShow === false ? this.enableshow() : this.disableshow()
-            }
+
         }
     }
 </script>
