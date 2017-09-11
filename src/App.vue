@@ -124,7 +124,6 @@ export default {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #2c3e50;
-      height: 100%;
       box-sizing: border-box;
     }
     .main_content{
@@ -261,6 +260,9 @@ export default {
         }
         .main-mod{
             margin-bottom: 0;
+        }
+        .main-mod:last-child{
+            margin-bottom: 30px;
         }
         .main-mod-con{
             list-style: none;

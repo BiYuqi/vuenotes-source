@@ -20,10 +20,11 @@
         data () {
             return {
                 items: [
-                    {name:'技术博客',ad:'personBlog'},
-                    {name:'Javascript',ad:'javascript'},
-                    {name:'主流框架',ad:'vuereact'},
-                    {name:'AngularJs',ad:'angular'},
+                    {name:'技术博客',ad:'blog'},
+                    {name:'Javascript',ad:'js'},
+                    {name:'主流框架',ad:'vr'},
+                    {name:'小程序',ad:'wechat'},
+                    {name:'AngularJs',ad:'ng'},
                     {name:'NodeJs',ad:'nodejs'},
                     {name:'移动端开发',ad:'mobile'},
                     {name:'构建工具',ad:'maketool'},

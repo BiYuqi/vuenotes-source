@@ -19,21 +19,22 @@ const QuietRes = require('components/static.vue')
 const Gits = require('components/gits.vue')
 const About = require('components/aboutme.vue')
 const Oth = require('components/oth.vue')
-
+const WeChat = require('components/wechat/wechat.vue')
 const routes = [
-    {path: '/', redirect:'/personBlog'},
-    {path: '/personBlog', component: PersonBlog},
-    {path: '/angular', component: AngularBlog},
+    {path: '/', redirect:'/blog'},
+    {path: '/blog', component: PersonBlog},
+    {path: '/ng', component: AngularBlog},
     {path: '/nodejs', component: NodejsBlog},
-    {path: '/vuereact', component: VueReact},
-    {path: '/Javascript', component: Javascript},
+    {path: '/vr', component: VueReact},
+    {path: '/js', component: Javascript},
     {path: '/mobile', component: Mobile},
     {path: '/maketool', component: MakeTool},
     {path: '/handbook',component: HandBook},
     {path: '/static',component: QuietRes},
     {path: '/gits',component:Gits},
     {path: '/aboutme', component: About},
-    {path: '/oth', component: Oth}
+    {path: '/oth', component: Oth},
+    {path: '/wechat', component: WeChat}
 ]
 
 const router = new VueRouter({
