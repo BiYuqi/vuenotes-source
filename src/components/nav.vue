@@ -7,7 +7,7 @@
                  </li>
              </ul>
              <div class="qr_logo">
-                 <span>手机端浏览</span>
+                 <span>手机浏览</span>
                  <img :src="require('../assets/qr.png')" alt="">
              </div>
          </div>
@@ -21,10 +21,10 @@
             return {
                 items: [
                     {name:'技术博客',ad:'personBlog'},
+                    {name:'Javascript',ad:'javascript'},
+                    {name:'主流框架',ad:'vuereact'},
                     {name:'AngularJs',ad:'angular'},
                     {name:'NodeJs',ad:'nodejs'},
-                    {name:'Vue & React',ad:'vuereact'},
-                    {name:'Javascript',ad:'javascript'},
                     {name:'移动端开发',ad:'mobile'},
                     {name:'构建工具',ad:'maketool'},
                     {name:'工具手册',ad:'handbook'},
@@ -45,6 +45,8 @@
         position: absolute;
         top: 60px;
         left: 0;
+        background-color: #fff;
+        border-right: 1px solid #E8E8E8;
     }
     .qr_logo{
         position: absolute;
@@ -55,8 +57,9 @@
 
     }
     .qr_logo span{
-        color: #a57373;
+        color: #4FC08D;
         display: block;
+        font-weight: bold;
         height: 40px;
         line-height: 40px;
         cursor: pointer;
@@ -70,7 +73,7 @@
     }
     .qr_logo img{
         position: absolute;
-        top: 40px;
+        top: 45px;
         left: 15px;
         width: 100px;
         height: 100px;

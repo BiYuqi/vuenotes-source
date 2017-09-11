@@ -16,10 +16,17 @@
                 </div>
                 <div class="art">
                     <h2>最后更新时间:</h2>
-                    <h4 class="update-time">更新于:2017/6/23</h4>
+                    <h4 class="update-time">更新于:{{update}}</h4>
                 </div>
                 <div class="art">
                     <h2>版本迭代</h2>
+                    <div class="art-version">
+                        <h4>2017/09/06日更新</h4>
+                        <ul>
+                            <li>移除移动端侧滑菜单，采用顶部吸顶，左右滑动交互</li>
+                            <li>列表样式修改，布局修改</li>
+                        </ul>
+                    </div>
                     <div class="art-version">
                         <h4>2017/04/01日更新</h4>
                         <ul>
@@ -47,7 +54,16 @@
 </template>
 
 <script>
+import { format } from '../assets/js/format.js'
 export default {
+    data() {
+        return {
+            update:''
+        }
+    },
+    mounted() {
+        this.update = format('YY/MM/DD')
+    }
 }
 </script>
 
