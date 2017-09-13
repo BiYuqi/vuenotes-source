@@ -195,7 +195,7 @@ export default {
         overflow: hidden;
         clear: both;
     }
-    @media screen and (max-width: 800px){
+    @media screen and (min-width: 500px) and (max-width: 1100px){
         body{
             background-color: #fff;
         }
@@ -267,6 +267,70 @@ export default {
         .main-mod-con{
             list-style: none;
             float: left;
+            width: 30%;
+            text-align: left;
+            border-radius: 5px;
+            transition: .4s all;
+            border: 1px solid #e0e0e0;
+            background-color: #fff;
+            margin: 4px 1.66%;
+        }
+        .main-mod-con a{
+            display: block;
+            color: #333;
+            margin: 0 1px;
+            width: 100%;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    @media screen and (max-width: 500px){
+        body{
+            background-color: #fff;
+        }
+        .star-gihub{
+            display: none;
+        }
+        .header{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 666;
+            text-align: center;
+            border-bottom: 1px solid #ececec;
+            background-color: #FDFDFD;
+            background: #54d9e0;
+        }
+        .btn_logo{
+            padding-left: 24px;
+        }
+        .btn_logo:after{
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            width: 30px;
+            height: 30px;
+            background: url('http://oiukswkar.bkt.clouddn.com/logo.mobile.png') no-repeat;
+            background-size: cover;
+            content: '';
+            display: block;
+        }
+        .main-wraper{
+            margin-top: 8px;
+            /*display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            flex-direction: row;*/
+        }
+        .main-mod-con{
+            list-style: none;
+            float: left;
             width: 45%;
             text-align: left;
             border-radius: 5px;
@@ -284,6 +348,33 @@ export default {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+        }
+        .main_content{
+            height: 100%;
+            box-sizing: border-box;
+            background-color: #fafafa;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            padding: 0;
+        }
+        .header img,
+        .github-img{
+            display: none !important;
+        }
+        .header i{
+            font-size: 18px;
+            color: #fff;
+        }
+        .header{
+            padding-left: 20px;
+            text-align: left;
+        }
+        .main-mod{
+            margin-bottom: 0;
+        }
+        .main-mod:last-child{
+            margin-bottom: 30px;
         }
     }
 </style>
