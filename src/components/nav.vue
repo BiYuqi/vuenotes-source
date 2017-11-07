@@ -51,7 +51,7 @@
     }
     .qr_logo{
         position: absolute;
-        top: 480px;
+        top: 520px;
         left: 0;
         width: 200px;
         height: 120px;
