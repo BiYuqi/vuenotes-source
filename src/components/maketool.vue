@@ -17,6 +17,14 @@
             </ul>
         </section>
         <section class="main-mod">
+            <p class="design">RollupJs教程</p>
+            <ul class="main-wraper">
+                <li class="main-mod-con" v-for="(item,index) in rollup">
+                    <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
+                </li>
+            </ul>
+        </section>
+        <section class="main-mod">
             <p class="design">CSS预处理</p>
             <ul class="main-wraper">
                 <li class="main-mod-con" v-for="(item,index) in csss">
@@ -32,16 +40,18 @@
     export default {
         data () {
             return {
-                gulps:null,
-                webpacks:null,
-                csss:null
+                gulps: null,
+                webpacks: null,
+                rollup: null,
+                csss: null
             }
         },
         methods: {
             getData () {
-                this.gulps = data.makeDeail.gulps;
-                this.webpacks = data.makeDeail.webpacks;
-                this.csss = data.makeDeail.csss;
+                this.gulps = data.makeDeail.gulps
+                this.webpacks = data.makeDeail.webpacks
+                this.rollup =data.makeDeail.rollup
+                this.csss = data.makeDeail.csss
             }
         },
         mounted () {
