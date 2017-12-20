@@ -5,7 +5,6 @@
     <transition name="no-mode-translate-fade">
         <router-view class="main_content"></router-view>
     </transition>
-
   </div>
 </template>
 
@@ -70,7 +69,6 @@ export default {
         font-family: "Microsoft Yahei";
         font-size: 14px;
         width: 100%;
-        background-color: #F8F8F8;
     }
     .range{
         height: 100%;
@@ -88,6 +86,12 @@ export default {
         background-color: #FDFDFD;
         position: relative;
         border-bottom: 1px solid #E8E8E8;
+    }
+    .header.active{
+        background-color: rgb(62, 171, 195);
+    }
+    .header.active .btn_logo{
+        color: #fff;
     }
     .header i{
         font-style: normal;
@@ -125,6 +129,7 @@ export default {
       -moz-osx-font-smoothing: grayscale;
       color: #2c3e50;
       box-sizing: border-box;
+
     }
     .main_content{
         height: 100%;

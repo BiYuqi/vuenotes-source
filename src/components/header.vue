@@ -1,5 +1,6 @@
 <template>
-    <div class="header">
+    <div class="header" :class="{active:isactive}">
+        <canvas-btn v-if="isactive"></canvas-btn>
         <a href="https://github.com/BiYuqi" target="_blank" title="我的Github" class="logo"><img src="../../static/img/logo.png" alt=""></a>
         <i class="btn_logo">前端导航</i>
         <iframe
@@ -17,14 +18,22 @@
 
 <script>
     import { mapActions } from 'vuex';
+    import canvasBtn from '../../src/components/canvas.vue'
     export default {
         data () {
             return {
-
+                isactive:false
             }
         },
-        methods: {
-
+        mounted() {
+            const m = new Date().getMonth()+1
+            const d = new Date().getDate()
+            if(m === 12 && d === 25){
+                this.isactive = true
+            }
+        },
+        components:{
+            canvasBtn
         }
     }
 </script>
