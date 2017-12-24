@@ -28,7 +28,7 @@
         mounted() {
             const m = new Date().getMonth()+1
             const d = new Date().getDate()
-            if(m === 12 && d === 25){
+            if(m === 12 && (d === 25 || d === 24)){
                 this.isactive = true
             }
         },
