@@ -1,7 +1,7 @@
 <template>
     <div class="header" :class="{active:isactive}">
         <canvas-btn v-if="isactive"></canvas-btn>
-        <a href="https://github.com/BiYuqi" target="_blank" title="我的Github" class="logo"><img src="../../static/img/logo.png" alt=""></a>
+        <a href="http://loadingmore.com" target="_blank" title="我的Github" class="logo"><img src="../../static/img/logo.png" alt=""></a>
         <i class="btn_logo">前端导航</i>
         <iframe
             style="position:absolute;top:23px;right:6px;"
@@ -10,7 +10,7 @@
         </iframe>
         <!-- <span class="btn"></span> -->
         <!-- <span class="btn" @click="toShow"></span> -->
-        <a href="http://loadingmore.com/" target="_blank" class="github-img" title="我的博客">
+        <a href="https://github.com/BiYuqi" target="_blank" class="github-img" title="我的博客">
             <img src="http://loadingmore.com/demo/src/img/timg.png" alt="">
         </a>
     </div>
