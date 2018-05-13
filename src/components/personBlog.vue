@@ -38,29 +38,28 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                items: null,
-                teams: null,
-                nation:null,
-                learn:null
-            }
-        },
-        methods: {
-            getData (){
-                    this.items = data.techBlog;
-                    this.teams = data.teamBlog;
-                    this.nation = data.nationBlog;
-                    this.learn = data.learnAny;
-            }
-        },
-        mounted () {
-            this.getData();
-        }
-
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      items: null,
+      teams: null,
+      nation: null,
+      learn: null
     }
+  },
+  methods: {
+    getData () {
+      this.items = data.techBlog
+      this.teams = data.teamBlog
+      this.nation = data.nationBlog
+      this.learn = data.learnAny
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

@@ -21,7 +21,7 @@ const About = require('components/aboutme.vue')
 const Oth = require('components/oth.vue')
 const WeChat = require('components/wechat/wechat.vue')
 const routes = [
-    {path: '/', redirect:'/blog'},
+    {path: '/', redirect: '/blog'},
     {path: '/blog', component: PersonBlog},
     {path: '/ng', component: AngularBlog},
     {path: '/nodejs', component: NodejsBlog},
@@ -29,18 +29,17 @@ const routes = [
     {path: '/js', component: Javascript},
     {path: '/mobile', component: Mobile},
     {path: '/maketool', component: MakeTool},
-    {path: '/handbook',component: HandBook},
-    {path: '/static',component: QuietRes},
-    {path: '/gits',component:Gits},
+    {path: '/handbook', component: HandBook},
+    {path: '/static', component: QuietRes},
+    {path: '/gits', component: Gits},
     {path: '/aboutme', component: About},
     {path: '/oth', component: Oth},
     {path: '/wechat', component: WeChat}
 ]
 
 const router = new VueRouter({
-    routes
+  routes
 })
-
 
 new Vue({
   el: '#app',

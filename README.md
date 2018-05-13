@@ -1,6 +1,9 @@
 # vue-component
 
 > A Vue.js project
+## update at 2018.5.14
+
+待重构
 
 ## Build Setup
 
