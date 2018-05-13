@@ -5,7 +5,7 @@
                 <p class="design">个人博客</p>
                 <ul class="main-wraper">
                     <li class="main-mod-con" v-for="(item,index) in items">
-                        <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
+                        <a  v-bind:href="item.link" target="_blank" :title="item.title ? item.title :''">{{item.name}}</a>
                     </li>
                 </ul>
             </section>
@@ -13,7 +13,7 @@
                 <p class="design">优秀团队</p>
                 <ul class="main-wraper">
                     <li class="main-mod-con" v-for="(item,index) in teams">
-                        <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
+                        <a v-bind:href="item.link" target="_blank" :title="item.title ? item.title :''">{{item.name}}</a>
                     </li>
                 </ul>
             </section>
@@ -21,7 +21,7 @@
                 <p class="design">技术社区</p>
                 <ul class="main-wraper">
                     <li class="main-mod-con" v-for="(item,index) in nation">
-                        <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
+                        <a v-bind:href="item.link" target="_blank" :title="item.title ? item.title :''">{{item.name}}</a>
                     </li>
                 </ul>
             </section>
@@ -29,7 +29,7 @@
                 <p class="design" title="如你遇上,那边是缘">Learn Anything</p>
                 <ul class="main-wraper">
                     <li class="main-mod-con" v-for="(item,index) in learn">
-                        <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
+                        <a v-bind:href="item.link" target="_blank" :title="item.title ? item.title :''">{{item.name}}</a>
                     </li>
                 </ul>
             </section>
