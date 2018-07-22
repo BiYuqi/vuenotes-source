@@ -56,14 +56,14 @@
 <script>
 import { format } from '../assets/js/format.js'
 export default {
-    data() {
-        return {
-            update:''
-        }
-    },
-    mounted() {
-        this.update = format('YY/MM/DD')
+  data () {
+    return {
+      update: ''
     }
+  },
+  mounted () {
+    this.update = format('YY/MM/DD')
+  }
 }
 </script>
 

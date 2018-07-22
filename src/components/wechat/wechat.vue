@@ -28,29 +28,24 @@
 </template>
 
 <script>
-    import data from '../../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                wechat:null,
-                wechat1:null,
-                wechat2:null
-            }
-        },
-        methods:{
-            getData(){
-                this.wechat = data.vueReact.wechat
-                this.wechat1 = data.vueReact.wesocial1
-                this.wechat2 = data.vueReact.wesocial2
-
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      wechat: null,
+      wechat1: null,
+      wechat2: null
     }
+  },
+  methods: {
+    getData () {
+      this.wechat = data.vueReact.wechat
+      this.wechat1 = data.vueReact.wesocial1
+      this.wechat2 = data.vueReact.wesocial2
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
-
-<style>
-
-</style>

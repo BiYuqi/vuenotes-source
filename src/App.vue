@@ -13,16 +13,16 @@ import NavBar from './components/nav.vue'
 import Headers from './components/header.vue'
 
 export default {
-    name: 'app',
-    components: {
-        NavBar,
-        Headers
-    },
-    data() {
-        return {
+  name: 'app',
+  components: {
+    NavBar,
+    Headers
+  },
+  data () {
+    return {
 
-        }
     }
+  }
 }
 </script>
 

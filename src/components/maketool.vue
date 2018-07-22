@@ -36,28 +36,28 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                gulps: null,
-                webpacks: null,
-                rollup: null,
-                csss: null
-            }
-        },
-        methods: {
-            getData () {
-                this.gulps = data.makeDeail.gulps
-                this.webpacks = data.makeDeail.webpacks
-                this.rollup =data.makeDeail.rollup
-                this.csss = data.makeDeail.csss
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      gulps: null,
+      webpacks: null,
+      rollup: null,
+      csss: null
     }
+  },
+  methods: {
+    getData () {
+      this.gulps = data.makeDeail.gulps
+      this.webpacks = data.makeDeail.webpacks
+      this.rollup = data.makeDeail.rollup
+      this.csss = data.makeDeail.csss
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

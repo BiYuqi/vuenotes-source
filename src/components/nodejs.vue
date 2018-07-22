@@ -12,22 +12,22 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                nodeData:null
-            }
-        },
-        methods: {
-            getData () {
-                this.nodeData = data.nodeJsBlog;
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      nodeData: null
     }
+  },
+  methods: {
+    getData () {
+      this.nodeData = data.nodeJsBlog
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

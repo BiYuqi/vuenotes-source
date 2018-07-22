@@ -28,26 +28,26 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                art1:null,
-                art2:null,
-                art3:null
-            }
-        },
-        methods: {
-            getData () {
-                this.art1 = data.quietBlog.static1;
-                this.art2 = data.quietBlog.static2;
-                this.art3 = data.quietBlog.static3;
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      art1: null,
+      art2: null,
+      art3: null
     }
+  },
+  methods: {
+    getData () {
+      this.art1 = data.quietBlog.static1
+      this.art2 = data.quietBlog.static2
+      this.art3 = data.quietBlog.static3
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

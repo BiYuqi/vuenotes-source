@@ -28,26 +28,26 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                mobile1:null,
-                mobile2:null,
-                mobile3:null
-            }
-        },
-        methods: {
-            getData () {
-                this.mobile1 = data.makeBlog.mobile1;
-                this.mobile2 = data.makeBlog.mobile2;
-                this.mobile3 = data.makeBlog.mobile3;
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      mobile1: null,
+      mobile2: null,
+      mobile3: null
     }
+  },
+  methods: {
+    getData () {
+      this.mobile1 = data.makeBlog.mobile1
+      this.mobile2 = data.makeBlog.mobile2
+      this.mobile3 = data.makeBlog.mobile3
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

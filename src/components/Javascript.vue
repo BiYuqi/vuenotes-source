@@ -20,24 +20,24 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                jsData:null,
-                jsData2:null
-            }
-        },
-        methods: {
-            getData () {
-                this.jsData = data.jsBlog.js1;
-                this.jsData2 = data.jsBlog.jq1;
-            }
-        },
-        mounted () {
-            this.getData()
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      jsData: null,
+      jsData2: null
     }
+  },
+  methods: {
+    getData () {
+      this.jsData = data.jsBlog.js1
+      this.jsData2 = data.jsBlog.jq1
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style lang="css">

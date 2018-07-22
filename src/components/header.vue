@@ -1,7 +1,7 @@
 <template>
     <div class="header" :class="{active:isactive}">
         <canvas-btn v-if="isactive"></canvas-btn>
-        <a href="http://loadingmore.com" target="_blank" title="我的Github" class="logo"><img src="../../static/img/logo.png" alt=""></a>
+        <a href="https://loadingmore.com" target="_blank" title="我的博客" class="logo"><img src="../../static/img/logo.png" alt=""></a>
         <i class="btn_logo">前端导航</i>
         <iframe
             style="position:absolute;top:23px;right:6px;"
@@ -10,32 +10,33 @@
         </iframe>
         <!-- <span class="btn"></span> -->
         <!-- <span class="btn" @click="toShow"></span> -->
-        <a href="https://github.com/BiYuqi" target="_blank" class="github-img" title="我的博客">
+        <a href="https://github.com/BiYuqi" target="_blank" class="github-img" title="我的Github">
             <img src="http://loadingmore.com/demo/src/img/timg.png" alt="">
         </a>
     </div>
 </template>
 
 <script>
-    import { mapActions } from 'vuex';
-    import canvasBtn from '../../src/components/canvas.vue'
-    export default {
-        data () {
-            return {
-                isactive:false
-            }
-        },
-        mounted() {
-            const m = new Date().getMonth()+1
-            const d = new Date().getDate()
-            if(m === 12 && (d === 25 || d === 24)){
-                this.isactive = true
-            }
-        },
-        components:{
-            canvasBtn
-        }
+import canvasBtn from '../../src/components/canvas.vue'
+export default {
+  data () {
+    return {
+      isactive: false
     }
+  },
+  mounted () {
+    const m = new Date().getMonth() + 1
+    const d = new Date().getDate()
+    const newYear = m === 1 && d === 1
+    const birth = d === 29 || d === 26 || d === 27 || d === 25
+    if (m === 12 && (d === 25 || d === 24) || newYear || birth) {
+      this.isactive = true
+    }
+  },
+  components: {
+    canvasBtn
+  }
+}
 </script>
 <style scoped>
     .github-img{

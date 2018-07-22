@@ -12,22 +12,22 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                git1:null
-            }
-        },
-        methods: {
-            getData () {
-                this.git1 = data.gits.git1;
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      git1: null
     }
+  },
+  methods: {
+    getData () {
+      this.git1 = data.gits.git1
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

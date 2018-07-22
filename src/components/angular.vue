@@ -22,24 +22,24 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                data1:null,
-                data2:null
-            }
-        },
-        methods:{
-            getData () {
-                this.data1 = data.angularBlog.angular1;
-                this.data2 = data.angularBlog.angular2;
-            }
-        },
-        mounted () {
-            this.getData()
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      data1: null,
+      data2: null
     }
+  },
+  methods: {
+    getData () {
+      this.data1 = data.angularBlog.angular1
+      this.data2 = data.angularBlog.angular2
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

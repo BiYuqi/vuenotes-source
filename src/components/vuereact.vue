@@ -36,29 +36,28 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                vue1:null,
-                vue2:null,
-                react:null,
-                reactNative:null
-            }
-        },
-        methods:{
-            getData(){
-                this.vue1 = data.vueReact.vuejs;
-                this.vue2 = data.vueReact.vueDemo;
-                this.react = data.vueReact.react;
-                this.reactNative = data.vueReact.reactDemo;
-
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      vue1: null,
+      vue2: null,
+      react: null,
+      reactNative: null
     }
+  },
+  methods: {
+    getData () {
+      this.vue1 = data.vueReact.vuejs
+      this.vue2 = data.vueReact.vueDemo
+      this.react = data.vueReact.react
+      this.reactNative = data.vueReact.reactDemo
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style>

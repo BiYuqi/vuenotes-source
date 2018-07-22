@@ -15,28 +15,27 @@
 </template>
 
 <script>
-    import { mapActions } from 'vuex';
-    export default {
-        data () {
-            return {
-                items: [
-                    {name:'技术博客',ad:'blog'},
-                    {name:'Javascript',ad:'js'},
-                    {name:'主流框架',ad:'vr'},
-                    {name:'小程序',ad:'wechat'},
-                    {name:'AngularJs',ad:'ng'},
-                    {name:'NodeJs',ad:'nodejs'},
-                    {name:'移动端开发',ad:'mobile'},
-                    {name:'构建工具',ad:'maketool'},
-                    {name:'工具手册',ad:'handbook'},
-                    {name:'优秀库',ad:'static'},
-                    {name:'版本控制',ad:'gits'},
-                    {name:'其他语言',ad:'oth'},
-                    {name:'关于本站',ad:'aboutme'}
-                ]
-            }
-        }
+export default {
+  data () {
+    return {
+      items: [
+        {name: '技术博客', ad: 'blog'},
+        {name: 'Javascript', ad: 'js'},
+        {name: '主流框架', ad: 'vr'},
+        {name: '小程序', ad: 'wechat'},
+        {name: 'AngularJs', ad: 'ng'},
+        {name: 'NodeJs', ad: 'nodejs'},
+        {name: '移动端开发', ad: 'mobile'},
+        {name: '构建工具', ad: 'maketool'},
+        {name: '工具手册', ad: 'handbook'},
+        {name: '优秀库', ad: 'static'},
+        {name: '版本控制', ad: 'gits'},
+        {name: '其他语言', ad: 'oth'},
+        {name: '关于本站', ad: 'aboutme'}
+      ]
     }
+  }
+}
 </script>
 
 <style scoped>

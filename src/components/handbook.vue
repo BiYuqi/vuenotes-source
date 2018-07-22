@@ -44,30 +44,30 @@
 </template>
 
 <script>
-    import data from '../../static/data/basedata.json'
-    export default {
-        data () {
-            return {
-                art1:null,
-                art2:null,
-                art3:null,
-                art4:null,
-                art5:null
-            }
-        },
-        methods: {
-            getData () {
-                this.art1 = data.articleBlog.art1;
-                this.art2 = data.articleBlog.art2;
-                this.art3 = data.articleBlog.art3;
-                this.art4 = data.articleBlog.art4;
-                this.art5 = data.articleBlog.art5;
-            }
-        },
-        mounted () {
-            this.getData();
-        }
+import data from '../../static/data/basedata.json'
+export default {
+  data () {
+    return {
+      art1: null,
+      art2: null,
+      art3: null,
+      art4: null,
+      art5: null
     }
+  },
+  methods: {
+    getData () {
+      this.art1 = data.articleBlog.art1
+      this.art2 = data.articleBlog.art2
+      this.art3 = data.articleBlog.art3
+      this.art4 = data.articleBlog.art4
+      this.art5 = data.articleBlog.art5
+    }
+  },
+  mounted () {
+    this.getData()
+  }
+}
 </script>
 
 <style scoped>

@@ -6,6 +6,8 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+const WorkBoxPlugin = require('workbox-webpack-plugin')
+const SwRegisterWebpackPlugin = require('sw-register-webpack-plugin')
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : config.build.env
@@ -78,7 +80,9 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       chunks: ['vendor']
-    })
+    }),
+    new WorkBoxPlugin.GenerateSW(config.sw.workbox),
+    new SwRegisterWebpackPlugin(config.sw.register)
   ]
 })
 
