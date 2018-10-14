@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">开发工具</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in git1">
+                <li class="main-mod-con" v-for="(item, index) in git1" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>

@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">开发工具</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art1">
+                <li class="main-mod-con" v-for="(item,index) in art1" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -11,7 +11,7 @@
         <section class="main-mod">
             <p class="design">开发规范</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art2">
+                <li class="main-mod-con" v-for="(item,index) in art2" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -19,7 +19,7 @@
         <section class="main-mod">
             <p class="design">开源库</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art3">
+                <li class="main-mod-con" v-for="(item,index) in art3" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -27,7 +27,7 @@
         <section class="main-mod">
             <p class="design">前端资源</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art4">
+                <li class="main-mod-con" v-for="(item,index) in art4" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -35,7 +35,7 @@
         <section class="main-mod">
             <p class="design">正则专题</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art5">
+                <li class="main-mod-con" v-for="(item,index) in art5" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>

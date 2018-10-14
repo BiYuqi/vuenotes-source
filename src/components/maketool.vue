@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">Gulp教程</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in gulps">
+                <li class="main-mod-con" v-for="(item,index) in gulps" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -11,7 +11,7 @@
         <section class="main-mod">
             <p class="design">Webpack教程</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in webpacks">
+                <li class="main-mod-con" v-for="(item,index) in webpacks" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -19,7 +19,7 @@
         <section class="main-mod">
             <p class="design">RollupJs教程</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in rollup">
+                <li class="main-mod-con" v-for="(item,index) in rollup" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -27,7 +27,7 @@
         <section class="main-mod">
             <p class="design">CSS预处理</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in csss">
+                <li class="main-mod-con" v-for="(item,index) in csss" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>

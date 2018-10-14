@@ -54,76 +54,76 @@
 </template>
 
 <script>
-import { format } from '../assets/js/format.js'
+import { format } from "../assets/js/format.js";
 export default {
-  data () {
+  data() {
     return {
-      update: ''
-    }
+      update: ""
+    };
   },
-  mounted () {
-    this.update = format('YY/MM/DD')
+  mounted() {
+    this.update = format("YY/MM/DD");
   }
-}
+};
 </script>
 
 <style scoped>
-    .aboutme{
-        padding: 10px 15px;
-    }
-    .update-time{
-        font-size: 14px;
-    }
-    li{
-        list-style: none;
-    }
-    li a{
-        text-decoration: none;
-        color: #4FC08D;
-    }
-    h2{
-        margin: 0;
-        padding: 0;
-    }
-    .main-mod-about h2{
-        color: #4FC08D;
-        margin-bottom: 10px;
-        font-size: 16px;
-        font-weight: lighter;
-        padding-bottom: 10px;
-        text-align: left;
-        border-bottom: 1px solid #FFCD45;
-    }
-    .main-mod-about p{
-        text-align: left;
-    }
-    .art{
-        margin-bottom: 20px;
-    }
-    .art .suggest{
-        display: block;
-        width: 200px;
-        text-align: center;
-        padding: 5px 8px;
-        border-radius: 4px;
-        margin-right: 5px;
-        color: #FFF;
-        background-color: #4FC08D;
-        transition: all .4s;
-        text-decoration: none;
-    }
-    .art-version h4{
-        height: 22px;
-        line-height: 22px;
-        width: 100%;
-        background-color: #eee;
-        position: relative;
-        padding-left: 10px;
-        text-align: left;
-    }
-    .art-version li{
-        text-align: left;
-        margin-left: 30px;
-        list-style: square;
-    }
+.aboutme {
+  padding: 10px 15px;
+}
+.update-time {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: #4fc08d;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.main-mod-about h2 {
+  color: #4fc08d;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ffcd45;
+}
+.main-mod-about p {
+  text-align: left;
+}
+.art {
+  margin-bottom: 20px;
+}
+.art .suggest {
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin-right: 5px;
+  color: #fff;
+  background-color: #4fc08d;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+.art-version h4 {
+  height: 22px;
+  line-height: 22px;
+  width: 100%;
+  background-color: #eee;
+  position: relative;
+  padding-left: 10px;
+  text-align: left;
+}
+.art-version li {
+  text-align: left;
+  margin-left: 30px;
+  list-style: square;
+}
 </style>

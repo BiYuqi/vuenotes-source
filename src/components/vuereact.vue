@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">VueJs</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in vue1">
+                <li class="main-mod-con" v-for="(item, index) in vue1" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -11,7 +11,7 @@
         <section class="main-mod">
             <p class="design">VueJs&Demo</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in vue2">
+                <li class="main-mod-con" v-for="(item, index) in vue2" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -19,7 +19,7 @@
         <section class="main-mod">
             <p class="design">React</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in react">
+                <li class="main-mod-con" v-for="(item, index) in react" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -27,7 +27,7 @@
         <section class="main-mod">
             <p class="design">React-Native</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in reactNative">
+                <li class="main-mod-con" v-for="(item, index) in reactNative" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>

@@ -4,7 +4,7 @@
             <section class="main-mod">
                 <p class="design">Angular教程</p>
                 <ul class="main-wraper">
-                    <li class="main-mod-con" v-for="(item,index) in data1">
+                    <li class="main-mod-con" v-for="(item,index) in data1" :key="index">
                         <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                     </li>
                 </ul>
@@ -12,7 +12,7 @@
             <section class="main-mod">
                 <p class="design">Angular博文</p>
                 <ul class="main-wraper">
-                    <li class="main-mod-con" v-for="(item,index) in data2">
+                    <li class="main-mod-con" v-for="(item,index) in data2" :key="index">
                         <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                     </li>
                 </ul>
@@ -22,26 +22,25 @@
 </template>
 
 <script>
-import data from '../../static/data/basedata.json'
+import data from "../../static/data/basedata.json";
 export default {
-  data () {
+  data() {
     return {
       data1: null,
       data2: null
-    }
+    };
   },
   methods: {
-    getData () {
-      this.data1 = data.angularBlog.angular1
-      this.data2 = data.angularBlog.angular2
+    getData() {
+      this.data1 = data.angularBlog.angular1;
+      this.data2 = data.angularBlog.angular2;
     }
   },
-  mounted () {
-    this.getData()
+  mounted() {
+    this.getData();
   }
-}
+};
 </script>
 
 <style scoped>
-
 </style>

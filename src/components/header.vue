@@ -2,7 +2,7 @@
     <div class="header" :class="{active:isactive}">
         <canvas-btn v-if="isactive"></canvas-btn>
         <a href="https://loadingmore.com" target="_blank" title="我的博客" class="logo"><img src="../../static/img/logo.png" alt=""></a>
-        <i class="btn_logo">前端导航</i>
+        <i class="btn_logo">编程导航</i>
         <iframe
             style="position:absolute;top:23px;right:6px;"
             frameborder="0" scrolling="0" width="91px" height="20px" class="star-gihub"

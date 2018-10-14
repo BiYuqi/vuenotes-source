@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">开发工具</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art1">
+                <li class="main-mod-con" v-for="(item,index) in art1" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -11,7 +11,7 @@
         <section class="main-mod">
             <p class="design">常用插件库</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art2">
+                <li class="main-mod-con" v-for="(item,index) in art2" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -19,7 +19,7 @@
         <section class="main-mod">
             <p class="design">Awesome集合</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in art3">
+                <li class="main-mod-con" v-for="(item,index) in art3" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>

@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">Javascript</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in jsData">
+                <li class="main-mod-con" v-for="(item,index) in jsData" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -11,7 +11,7 @@
         <section class="main-mod">
             <p class="design">Jquery</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in jsData2">
+                <li class="main-mod-con" v-for="(item,index) in jsData2" :key="index">
                     <a v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>

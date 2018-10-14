@@ -1,9 +1,10 @@
 # vue-component
 
 > A Vue.js project
-## update at 2018.5.14
 
-待重构
+# 问题
+
+代码为练手项目，写的比较烂，待重构 update at 2018.5.14 ----但是不妨碍浏览网站~ ~ ~
 
 ## Build Setup
 

@@ -3,7 +3,7 @@
         <section class="main-mod">
             <p class="design">小程序官方文档</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in wechat">
+                <li class="main-mod-con" v-for="(item, index) in wechat" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -11,7 +11,7 @@
         <section class="main-mod">
             <p class="design">小程序社区</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in wechat1">
+                <li class="main-mod-con" v-for="(item, index) in wechat1" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -19,7 +19,7 @@
         <section class="main-mod">
             <p class="design">小程序教程</p>
             <ul class="main-wraper">
-                <li class="main-mod-con" v-for="(item,index) in wechat2">
+                <li class="main-mod-con" v-for="(item, index) in wechat2" :key="index">
                     <a  v-bind:href="item.link" target="_blank">{{item.name}}</a>
                 </li>
             </ul>
@@ -28,24 +28,24 @@
 </template>
 
 <script>
-import data from '../../../static/data/basedata.json'
+import data from "../../../static/data/basedata.json";
 export default {
-  data () {
+  data() {
     return {
       wechat: null,
       wechat1: null,
       wechat2: null
-    }
+    };
   },
   methods: {
-    getData () {
-      this.wechat = data.vueReact.wechat
-      this.wechat1 = data.vueReact.wesocial1
-      this.wechat2 = data.vueReact.wesocial2
+    getData() {
+      this.wechat = data.vueReact.wechat;
+      this.wechat1 = data.vueReact.wesocial1;
+      this.wechat2 = data.vueReact.wesocial2;
     }
   },
-  mounted () {
-    this.getData()
+  mounted() {
+    this.getData();
   }
-}
+};
 </script>
