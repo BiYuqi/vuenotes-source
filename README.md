@@ -1,6 +1,6 @@
-# vue-component
+# 不再维护此仓库
 
-> A Vue.js project
+**新站已经连接到[vuenotes](https://github.com/BiYuqi/vuenotes)**
 
 # 问题
 
